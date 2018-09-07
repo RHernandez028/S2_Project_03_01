@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+/* Here I used the @ rule to tell the brower that the names in the font family rule is called the names that follow them. So when the font names are called the source url to the font file the browser knows which font to use. */
+@font-face {
+    
+    font-family: Champagne;
+    src: url('cac_champagne.woff') format('woff'),
+        url('cac_champagne.ttf') format('truetype');
+    
+    font-family: Grunge;
+        src: url('1942.woff'), format('woff'),
+        url('1942.ttf') format('truetype');
+
+    font-family: Dobkin;
+     src: url('DobkinPlain.woff') format('woff'),
+        url('DobkinPlain.ttf') format('truetype');
+}
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 1
+   
+   PHCT Typographic Style Sheet
+   Author: Gabriel Hernandez
+   Date: 9/6/18  
+   
+   Filename: ph_styles.css
+
+*/
+
+
+/* Structural Styles */
+
+/* The html selector selects every thing that is in the html elements to have the hsl background color. */
+/* All the folowing rules follow the inhertance from bottom to top. Also with specifiity. */
+
+/* The background color property changes the color of the webpage behind the text. The font family property tells the document which font to use (depending on the browser's capabilities if it doesn't know the first font it will got to the next one until it finds the one it is able to be read.) */
+
+html {
+    background: hsl(91, 8%, 56%);
+}
+
+/* This body selector selects all body element and everything in it. */
+body {
+    background: hsl(58, 31%, 84%);
+    font-family: Palatino Linotype, Book Antiqua,  Palatino, serif;
+}
+
+/* This selector selects all header tags and everything in it. */
+header{
+    background: black
+}
+
+/* This rule selcects the  */
+p {
+    margin: 0pc;
+    padding-top: 0px; 
+}
+/* Navigation Styles */
+
+
+
+
+/* Section Styles */
+
+
+
+
+/* Description List Styles */
+
