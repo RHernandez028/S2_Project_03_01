@@ -33,7 +33,7 @@
 /* Structural Styles */
 
 /* The html selector selects every thing that is in the html elements to have the hsl background color. */
-/* All the folowing rules follow the inhertance from bottom to top. Also with specifiity. */
+/* All the folowing rules follow the inhertance from bottom to top. Also with specifiity(the more specific the rule the higher it is in the css heirarchy). */
 
 /* The background color property changes the color of the webpage behind the text. The font family property tells the document which font to use (depending on the browser's capabilities if it doesn't know the first font it will got to the next one until it finds the one it is able to be read.) */
 
@@ -44,7 +44,7 @@ html {
 /* This body selector selects all body element and everything in it. */
 body {
     background: hsl(58, 31%, 84%);
-    font-family: Palatino Linotype, Book Antiqua,  Palatino, serif;
+    font-family: 'Palatino Linotype', 'Book Antiqua',  'Palatino', serif;
 }
 
 /* This selector selects all header tags and everything in it. */
@@ -52,20 +52,89 @@ header{
     background: black
 }
 
-/* This rule selcects the  */
+/* In this rule the p elements is selected to have it's margin to have 0px on all sides aswell as padding around the margin of 5px on the top and 25px on the other three sides. */
 p {
-    margin: 0pc;
-    padding-top: 0px; 
+    margin: 0px;
+    padding: 5px 25px 25px 25px; 
+}
+
+/* the child of body is p and is only going to be selected, it's properties are changed from the browsers deafaults to font size of 1.1 em and the the text centered in the page. */
+body > p {
+    font-size: 1.1em;
+    text-align: center;
+}
+
+/* This rule calles for the address to have a normal font style, font size of .9em, centered text, padding of 10px on the top and bottom.  */
+address {
+    font-style: normal;
+    font-size: 0.9em;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 /* Navigation Styles */
 
+/* Here all of the elemetns sre read form right to left as children of the element to the left of them because the are nested into each other. This block applies the properties to the element when it's jusstloaded on the page...*/
+nav > ul> li > a {
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+nav > ul> li > a:link,
+nav > ul> li > a:visited {
+    color: white;
+    text-decoration: none;
+    background: hsla(0, 0%, 42%, 0.4);
+}
 
+/* ... here the elements text and background color will change when the user either hovers over the anchored list items if it is activated or both. */
 
+nav > ul> li > a:hover,
+nav > ul> li > a:active {
+    color: hsla(0, 0%, 100%, 0.7);
+    background-color: hsl(0, 0%, 42%, 0.7);
+}
 
 /* Section Styles */
 
+section.playbill h1 {
+    font-size: 3em;
+    font-weight: normal;
+    margin: 0px;
+    padding: 20px 0px 10px 20px
+}
 
+section#play1 {
+    background-color: hsl(241, 100%, 88%);
+}
 
+section#play1 h1{
+    font-family: Champagne, cursive
+}
 
+section#play2 {
+    background-color: hsl(25, 88%, 73%); 
+}
+
+section#play2 h1{
+    font-family: Grunge, 'Times New Roman', Times, serif;
+}
+
+section#play3 {
+    background-color: hsl(0, 100%, 75%);
+}
+
+section#play3 h1{
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+section#play4 {
+    background-color: hsl(296, 86%, 86%);
+
+}
+
+section#play4 h1 {
+    font-family: Dobkin, cursive;
+}
 /* Description List Styles */
 
