@@ -6,11 +6,15 @@
     font-family: Champagne;
     src: url('cac_champagne.woff') format('woff'),
         url('cac_champagne.ttf') format('truetype');
-    
-    font-family: Grunge;
-        src: url('1942.woff'), format('woff'),
-        url('1942.ttf') format('truetype');
+}
 
+@font-face {
+    font-family: Grunge;
+        src: url('1942.woff') format('woff'),
+        url('1942.ttf') format('truetype');
+}
+
+@font-face {
     font-family: Dobkin;
      src: url('DobkinPlain.woff') format('woff'),
         url('DobkinPlain.ttf') format('truetype');
@@ -97,6 +101,7 @@ nav > ul> li > a:active {
 
 /* Section Styles */
 
+/* This rule with the class playbill selecets the section elemetns with only the class name "playbill" and all h1 elements inside of it. */
 section.playbill h1 {
     font-size: 3em;
     font-weight: normal;
@@ -104,6 +109,7 @@ section.playbill h1 {
     padding: 20px 0px 10px 20px
 }
 
+/* In each of the following rules the all have a unique and sepcific id that is called. This is to show specicficty so the brpowser know what changes to make to which rule. */
 section#play1 {
     background-color: hsl(241, 100%, 88%);
 }
@@ -138,3 +144,15 @@ section#play4 h1 {
 }
 /* Description List Styles */
 
+/* Here the rule selects dt element nested in the dl elemetns whichis a child of the aside element. The differnece between the dt and dl are dt's are terms thare defined by the dd(description definition). Her the font weight makes it bold to contrast with the description. */
+aside > dl > dt {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: hsla(0, 0%, 0%, 0.4);
+}
+
+aside > dl > dd {
+    font-size: 1.3em;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
