@@ -53,7 +53,7 @@ body {
 
 /* This selector selects all header tags and everything in it. */
 header{
-    background: black
+    background: black;
 }
 
 /* In this rule the p elements is selected to have it's margin to have 0px on all sides aswell as padding around the margin of 5px on the top and 25px on the other three sides. */
@@ -106,7 +106,7 @@ section.playbill h1 {
     font-size: 3em;
     font-weight: normal;
     margin: 0px;
-    padding: 20px 0px 10px 20px
+    padding: 20px 0px 10px 20px;
 }
 
 /* In each of the following rules the all have a unique and sepcific id that is called. This is to show specicficty so the brpowser know what changes to make to which rule. */
@@ -115,7 +115,7 @@ section#play1 {
 }
 
 section#play1 h1{
-    font-family: Champagne, cursive
+    font-family: Champagne, cursive;
 }
 
 section#play2 {
@@ -144,7 +144,7 @@ section#play4 h1 {
 }
 /* Description List Styles */
 
-/* Here the rule selects dt element nested in the dl elemetns whichis a child of the aside element. The differnece between the dt and dl are dt's are terms thare defined by the dd(description definition). Her the font weight makes it bold to contrast with the description. */
+/* Here the rule selects dt element nested in the dl elemetns whichis a child of the aside element. The differnece between the dt and dl are dt's are terms thare defined by the dd(description definition). Her the font weight makes it bold to contrast with the description.a */
 aside > dl > dt {
     font-size: 1.3em;
     font-weight: bold;
